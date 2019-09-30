@@ -1,5 +1,6 @@
 from knn import eucli_dist, k_neighbors, predict, accuracy_score
 from copy import deepcopy
+from random import shuffle
 
 def k_fold_data_split(input_data, k):
     """Splits the input data set into k number of sections/folds, where each fold is used as testing set. 
@@ -10,6 +11,7 @@ def k_fold_data_split(input_data, k):
     k (int): Number of folds   
     """
     input_data = input_data[1:]
+    shuffle(input_data)
     step = len(input_data)//k
     test_sets = []
     k_fold_data_set = []
