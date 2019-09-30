@@ -6,5 +6,6 @@ Applied to titanic data set.
 •	Data inspection and analysis
 •	Data pre-processing
 •	KNN model training
+•	Naive Bayes model training
 •	Making predictions 
 
